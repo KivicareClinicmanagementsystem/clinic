@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+    <div class="row p-5 banner">
+        <div class="col-md-6 offset-1 p-3 Treatments "  data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <h3>{{ T.name }}</h3>
+            <img src="/media/{{ T.photo }}" width="100%" height="400"/>
+        </div>
+    <div class="col-md-12 ps-4">
+        <p>{{ T.description|safe }}</p>
+    </div>
+    
+    </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Pay for Booking</h1>
+    </div>
+</div>
+<!--row end-->
+<div class="row banner">
+<div class="col-md-12">
+</div>
+
+    <form action="{% url 'payment' %}" method="POST">
+        
+            {% csrf_token %}   
+            <input type="hidden" name="name" value="{{ b.name }}">
+            <input type="hidden" name="Provider_order_id" value="{{ b.id }}">
+            <input type="hidden" name="amount" value="100">
+            <input type="hidden" name="bookingid" value="{{ b.id }}">
+            
+            <button class="btn btn-primary">Pay Now</button>
+        </form>
+    </div>
+
+{% endblock %}

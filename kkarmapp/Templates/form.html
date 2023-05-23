@@ -1,0 +1,49 @@
+{% load static %}
+ <html>
+    <head>
+        <title>form</title>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'style.css' %}" rel="stylesheet"/> 
+ </head>  
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <form>
+                        <label>name</label>
+                        <input type="text" class="form-control"place folder="enter name" pattern="[A-Za-z ]"/>
+                        <label>phone</label>
+                        <input type="tel" class="form-control"maxlength="10" pattern="[6|7|8|9][0-9]{9}"/>
+                        <label>email</label>
+                        <input type="email" class="form-control" />
+                        <label>Address</label>
+                        <textarea class="form-control"></textarea>
+                        <label>gender</label>
+                        <input type="radio" name="gen"/>
+                        <label>female</label>
+                        <input type="radio" name="gen"/>
+                        <label>male</label>
+                        <br>
+                        <label>course</label>
+                        <select class="form-control">
+                        <option value="">select course=</option>
+                        <option>css</option>
+                        <option>html</option>
+                        <option>java</option>
+                        <option>python</option>
+                        </select>
+                        <label>date</label>
+                        <input type="date" class="form-control"/>
+                        <label>time</label>
+                        <input type="time" class="form-control"/>
+                        <label>pic</label>
+                        <input type="file" class="form-control"accept="jpg.png.pdf.wbp"/>
+                        <button type="submit" class="btn btn-warning" >submit</button>
+                        <button type="reset" >clear</button>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>    

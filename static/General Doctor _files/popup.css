@@ -1,0 +1,224 @@
+/* Popup style*/
+img.iqonic-loader {
+  display: none;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+#try-demo-popup {
+  display: none;
+  position: relative;
+  background: #fbfbfb;
+  padding: 30px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+#try-demo-popup .iqonic-demo-email,
+#try-demo-popup .mp-demo-source-blog {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5px 0 2px 0;
+}
+
+.iqonic-message .iqonic-demo-success,
+.iqonic-message .iqonic-demo-fail {
+  display: none;
+}
+
+.mfp-content .try-demo {
+  display: block;
+}
+
+
+/* iqonic-start-demo */
+
+.iqonic-start-demo { 
+  max-width: 500px;        
+  margin: 0 auto;     
+  background: #ffffff;     
+  padding: 40px;     
+  border-radius: 10px; 
+  text-align: center;
+}
+
+.iqonic-start-demo .iqonic-form-image img {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.iqonic-start-demo .iqonic-form-title {
+  color: #000000;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.iqonic-start-demo .iqonix-form-description {
+  color: #858997;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.iqonic-start-demo .form-input-value {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+}
+
+.iqonic-start-demo .iqonic-submit {
+  margin-top: 30px;
+  background: #7737FF;
+  color: #F7FAFC;
+  width: 100%;
+}
+.iqonic-start-demo input {
+  width: auto;
+  float: inherit;
+}
+
+@media (max-width: 767px) {
+  .fit-to-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;600;700;800;900&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap");
+
+:root {
+  --iq-primary-light: #F0F4FD;
+  --iq-primary: #7093E5;
+  --iq-body-font-family: Poppins, sans-serif;
+  --iq-heading-font-family: Heebo, sans-serif;
+}
+
+.kivi-widget .widget-layout .d-flex {
+  display: flex !important;
+}
+
+
+.kivi-widget .widget-layout .flex-column {
+  flex-direction: column;
+}
+
+
+.kivi-widget .widget-layout .justify-content-center {
+  justify-content: center !important;
+}
+
+
+.kivi-widget .widget-layout .align-items-center {
+  align-items: center !important;
+}
+
+
+.kivi-widget .widget-layout .gap-1 {
+  gap: 16px !important;
+}
+
+.kivi-widget .widget-layout img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.kivi-widget .widget-layout h6 {
+  font-family: var(--iq-heading-font-family);
+  font-weight: 500;
+  color: var(--iq-dark);
+  font-style: normal;
+  text-transform: none;
+  margin: 0 !important;
+  margin-bottom: 0px !important;
+  font-size: 14px;
+}
+
+
+.kivi-widget .widget-layout label {
+  margin-bottom: 0;
+  box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.05);
+}
+
+.kivi-widget .widget-layout .card-checkbox {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.kivi-widget .widget-layout .iq-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  padding: 16px;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--iq-white);
+  background-clip: border-box;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+}
+
+
+.kivi-widget .widget-layout .iq-client-widget .card-checkbox:checked + .btn-border01 .iq-fancy-design {
+  background-color: transparent;
+  border-color: var(--iq-primary);
+}
+
+.kivi-widget .widget-layout .iq-client-widget .card-checkbox:checked + .btn-border01 .iq-fancy-design::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--iq-primary);
+  border: 2px solid var(--iq-white);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+}
+
+.kivi-widget .widget-layout .iq-client-widget .card-checkbox:checked + .btn-border01 .iq-fancy-design .avatar {
+  color: var(--iq-white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.kivi-widget .widget-layout .iq-client-widget .btn-border01 .iq-fancy-design {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.kivi-widget .widget-layout .iq-client-widget .btn-border01 .iq-fancy-design:hover {
+  border: 1px solid var(--iq-primary);
+}
+
+
+.kivi-widget .widget-layout .avatar-70 {
+  height: 70px;
+  width: 70px;
+  min-width: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 4px;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.icon-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-none{
+  display: none;
+}

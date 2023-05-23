@@ -1,0 +1,71 @@
+(function (jQuery) {
+    "use strict";
+    jQuery(document).ready(function () {
+        
+        callSwiper();
+
+    });
+    
+})(jQuery);
+
+function callSwiper(){
+
+    var sliders = [];
+
+    if (jQuery('.swiper-container').length > 0) {
+        jQuery('.swiper-container').each(function(index, element) {
+
+            jQuery(this).addClass('s' + index);
+            var slider = new Swiper('.s' + index, {
+                slidesPerView: jQuery(this).data('items'),
+                loopedSlides: 3,
+                speed: 1500,
+                autoplay: jQuery(this).data('autoplay'),
+                loop: jQuery(this).data('loop'),
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                    renderFraction: function(currentClass, totalClass) {
+                        return '<span class="' + currentClass + '"></span>' +
+                            ' <span class="iq-swiper-line"></span> ' +
+                            '<span class="' + totalClass + '"></span>';
+                    },
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    480: {
+                        slidesPerView: jQuery(this).data("items-mobile"),
+
+                    },
+                    // when window width is >= 480px
+                    786: {
+                        slidesPerView: jQuery(this).data("items-tab"),
+
+                    },
+                    // when window width is >= 640px
+                    1023: {
+                        slidesPerView: jQuery(this).data("items-laptop"),
+
+                    },
+                    1199: {
+                        slidesPerView: jQuery(this).data("items"),
+
+                    }
+                }
+
+
+            });
+            sliders.push(slider);
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+            }, 500);
+
+        });
+    }
+
+}

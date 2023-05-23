@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<div class="row ">
+<div class="col-md-12">
+    <h3>{{ d.name }}</h3>
+    </div>
+    </div>
+    <div class="row p-2  banner">
+        <div class="col-md-12 offset-1 p-3 Doctor" data-aos="fade-up"
+        data-aos-duration="3000">
+        <img src="/media/{{ d.photo }}" width="300" height="300"/>
+        
+        
+            <h4>{{ d.Treatmentid }}</h4> 
+            <h4>{{ d.qualification }}</h4>
+            <h4>{{ d.specialist }}</h4>
+            
+        </div>
+    
+    <div class="col-md-12 ps-4">
+        <p>{{ d.description|safe }}</p>
+    </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row p-5 banner">
+    <div class="col-md-5 offset-3 ps-4">
+        <h3> Book Your Appointment</h3>
+        <form action="/insertAppointment/" method="post">
+            {% csrf_token %}
+            <label>patientname</label>
+            <input type="text" class="form-control" placeholder="name" name="name">
+            <label>Select Treatment</label>
+            <select class="form-control"  name="treatmentid">
+                <option>-Select-</option>
+                {% for t in t %}
+                <option value="{{ t.id }}">{{ t.name }}</option>
+                {% endfor %}
+                </select>
+                <label>Gender</label>
+                <input type="radio" name="Gender" value="Female"/>
+                <label>Female</label>
+                <input type="radio" name="Gender" value="Male"/>
+                <label>Male</label>
+                <br>
+            <label>Dob</label>
+            <input type="date" class="form-control" placeholder="name" name="Dob">
+            <label>address</label>
+            <input type="text" class="form-control" placeholder="name" name="address">
+            <label>phoneno</label>
+            <input type="tel" class="form-control" placeholder="name" name="phoneno">
+            <label>Appointmenttime</label>
+            <input type="time" class="form-control" placeholder="name" name="Appoinmenttime">
+            <label>Appointmentdate</label>
+            <input type="date" class="form-control" placeholder="name" name="Appoinmentdate">
+            <label>Select Doctor</label>
+            <select class="form-control"  name="doctorid">
+            <option>-Select-</option>
+                {% for t in d %}
+                <option value="{{ t.id }}">{{ t.name }}</option>
+                {% endfor %}
+                </select>
+            <label>feedback</label>
+            <input type="text" class="form-control" placeholder="name" name="feedback"><br>
+            <button class="btn btn-primary" type="submit">send</button>
+            
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

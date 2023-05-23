@@ -1,0 +1,201 @@
+#heading{
+    color:darksalmon(27, 3, 31);
+    font-size:50px;
+    background: rgb(116, 50, 50);
+    text-align:center; 
+    font-family:bell gothic std;
+    word-spacing: 20px;
+}
+.para{
+    color:blueviolet;
+    font-size:25px ;
+    text-decoration:underline;
+    font-style:italic;
+}
+#image{
+    border: inset red ;
+    border-radius: 25px;
+    box-shadow:5px 10px 20px blueviolet;
+}
+#main{
+    background: rgb(186, 186, 94);
+}
+
+#nav a{ color:black;}
+
+.blog a{
+    color:black;
+    text-decoration: none;
+}
+
+.iq-breadcrumb-two{
+    padding: 45px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.text-center{
+    text-align: center! important;
+}
+
+
+::after, ::before{
+    box-sizing: border-box;
+}
+
+.icons{
+    color: blue;
+    width:400px;
+    height: 200px;
+    padding: 30px;
+}
+
+.banner{
+    background: url('clinic.jpg');
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner1{
+    background: url('cn.jpg');
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner2{
+    background: url('imm.jpg');
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner3{
+    background: url('service1.jpg');
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner5{
+    background: url('tr.jpg');
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+.banner6{
+    background: url('tre.jpg');
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    
+    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 15px 0px 15px ;
+    margin-top: 15px;
+}
+
+.container card{
+    width: 350px;
+    position: relative;
+    height: 400px;
+    background: #fff;
+    margin: 50px 20px;
+    padding: 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+   
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -60px;
+    left: 30px;
+    box-shadow: 0 0 87.3px 2.7px rgba(255, 255, 255, 0.6);;
+
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imgBx:hover img{
+    transform: scale(1,1);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.p{
+    margin: 15px 0;
+    line-height: 1.66em;
+}
+
+
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.iq-contact li.iq-week {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(82,95,129,.09);
+}
+footer ul.iq-contact li {
+    padding: 10px 0;
+}
+
+.iq-contact li.iq-week .iq-time {
+    color: #f68685;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-weight: var(--font-weight-medium);
+}
+
+.elementor-element, .elementor-lightbox {
+    --swiper-theme-color: #000;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-horizontal-gap: 50px;
+}
+
+

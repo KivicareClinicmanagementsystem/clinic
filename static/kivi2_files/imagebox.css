@@ -1,0 +1,50 @@
+.css_prefix-image-box .css_prefix-image-box-img {
+    position: relative;
+    /* padding:8px; */
+}
+
+.css_prefix-image-box .elementor-image-box-content .css_prefix-image-box-title a {
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-size: var(--font-size-sm);
+    letter-spacing: .08em;
+    font-weight: var(--font-weight-medium);
+    padding: 0;
+}
+
+.iqonic-megamenu-container .css_prefix-image-box:hover .css_prefix-image-box-title>a {
+    color: var(--primary-color);
+}
+
+.css_prefix-image-box .elementor-image-box-content .css_prefix-image-box-description {
+    margin-bottom: 0;
+}
+
+
+
+
+/*******Image Scroll Effect**********
+.css_prefix-image-box.hover-image-scroll .css_prefix-image-box-img{
+	cursor: pointer;
+    height: 500px;
+	-webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    overflow: hidden;
+}
+
+.css_prefix-image-box.hover-image-scroll .css_prefix-image-box-img img{
+    width:100%;
+    object-fit: cover;
+    transform: translateY(0);
+    transition: 5s ease-out;
+}
+.css_prefix-image-box.hover-image-scroll:hover .css_prefix-image-box-img img{
+  transform: translateY(calc(-100% + 500px));
+  transition: 5s ease-out;
+}
+.css_prefix-image-box .elementor-image-box-content{
+    margin-top:32px;
+}

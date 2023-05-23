@@ -1,0 +1,22 @@
+(function (jQuery) {
+    "use strict";
+    jQuery(document).ready(function () {
+        
+        callCountTo();
+
+    });
+    
+})(jQuery);
+
+function callCountTo(){
+
+    jQuery(document).ready(function() {
+        if (jQuery('.timer').length > 0) {
+            jQuery('.timer').each(function() {
+                jQuery('.timer').countTo();
+            });
+        }
+
+    });
+    
+}

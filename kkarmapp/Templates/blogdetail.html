@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+<div class="row banner">
+    <div class="col-md-12">
+        <h2>blogs</h2>
+    </div>
+
+    <div class="col-md-10 offset-1 p-3 blogs" data-aos="zoom-in">
+        <h3>{{blg.title}}</h3>
+        <img src="/media/{{ blg.photo }}" />
+        <P>{{blg.description|safe}}</P>
+        <p>{{blg.postby}} ({{ blg.poston }})</p>
+    </div>
+</div>
+{% endblock %}
